@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.Driver;
 
-public class C03_softAssert {
+public class C03_positiveLoginTest {
 
     @Test
     public void test01(){
