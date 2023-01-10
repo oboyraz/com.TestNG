@@ -26,6 +26,7 @@ public class C04_negativeLoginTest {
     @Test
     public void wrongPasswordTest(){
         Driver.getDriver().get("https://www.qualitydemy.com/");
+        qualitydemyPage = new QualitydemyPage();
         qualitydemyPage.loginButton.click();
         qualitydemyPage.emailArea.sendKeys("user_1106147@login.com");
         qualitydemyPage.passwordArea.sendKeys("123456");
@@ -37,6 +38,7 @@ public class C04_negativeLoginTest {
     @Test
     public void wrongPasswordAndEmailTest(){
         Driver.getDriver().get("https://www.qualitydemy.com/");
+        qualitydemyPage = new QualitydemyPage();
         qualitydemyPage.loginButton.click();
         qualitydemyPage.emailArea.sendKeys("poyraz@adana.com");
         qualitydemyPage.passwordArea.sendKeys("123456");
