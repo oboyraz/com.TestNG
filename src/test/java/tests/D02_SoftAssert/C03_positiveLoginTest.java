@@ -1,4 +1,4 @@
-package tests.D02;
+package tests.D02_SoftAssert;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

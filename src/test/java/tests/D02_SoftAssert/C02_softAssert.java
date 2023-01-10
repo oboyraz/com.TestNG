@@ -1,4 +1,4 @@
-package tests.D02;
+package tests.D02_SoftAssert;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
