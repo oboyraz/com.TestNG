@@ -7,12 +7,41 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Driver {
+
+    private Driver(){
+
+    }
+
     static WebDriver driver;
+
     public static WebDriver getDriver(){
 
+        String browser = ConfigReader.getProperty("browser");
+
         if (driver==null) {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+
+            switch (browser){
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "safari":
+                    WebDriverManager.safaridriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+
+            }
+
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
