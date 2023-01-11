@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class C05_softAssert {
-    @Test(groups = {"minireg1","smoke"})
 
+    @Test(groups = {"minireg1","smoke"})
     public void test01(){
         SoftAssert softAssert = new SoftAssert();
 
