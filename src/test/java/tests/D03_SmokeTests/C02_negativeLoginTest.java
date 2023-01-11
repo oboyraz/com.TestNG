@@ -6,6 +6,7 @@ import pages.AmazonPage;
 import pages.QualitydemyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_negativeLoginTest {
     // wrong email, correct password
@@ -22,6 +23,7 @@ public class C02_negativeLoginTest {
         qualitydemyPage.passwordArea.sendKeys(ConfigReader.getProperty("qdValidPassword"));
         qualitydemyPage.submitLoginButton.click();
         Assert.assertTrue(qualitydemyPage.emailArea.isDisplayed());
+        Driver.quitDriver();
     }
 
     @Test
@@ -32,6 +34,7 @@ public class C02_negativeLoginTest {
         qualitydemyPage.passwordArea.sendKeys(ConfigReader.getProperty("qdInvalidPassword"));
         qualitydemyPage.submitLoginButton.click();
         Assert.assertTrue(qualitydemyPage.emailArea.isDisplayed());
+        Driver.quitDriver();
     }
 
     @Test
@@ -42,5 +45,6 @@ public class C02_negativeLoginTest {
         qualitydemyPage.passwordArea.sendKeys(ConfigReader.getProperty("qdInvalidPassword"));
         qualitydemyPage.submitLoginButton.click();
         Assert.assertTrue(qualitydemyPage.emailArea.isDisplayed());
+        Driver.quitDriver();
     }
 }
