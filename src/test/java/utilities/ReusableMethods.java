@@ -95,7 +95,7 @@ public class ReusableMethods {
                 element.click();
                 return;
             } catch (WebDriverException e) {
-                bekle(1);
+                delay(1);
             }
         }
     }
