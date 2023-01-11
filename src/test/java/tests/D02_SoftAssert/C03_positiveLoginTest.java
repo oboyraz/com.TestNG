@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C03_positiveLoginTest {
 
-    @Test
+    @Test(groups = "smoke")
     public void test01(){
         Driver.getDriver().get("https://www.qualitydemy.com");
 

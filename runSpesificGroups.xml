@@ -10,10 +10,12 @@
         <groups>
             <run>
                 <include name="minireg1"></include>
-                <include name="minireg"></include>
+                <exclude name="minireg"></exclude>
+                <exclude name="smoke"></exclude>
             </run>
         </groups>
         <packages>
+            <package name="tests.D01_testNGFramework"></package>
             <package name="tests.D02_SoftAssert"></package>
             <package name="tests.D03_SmokeTests"></package>
         </packages>
