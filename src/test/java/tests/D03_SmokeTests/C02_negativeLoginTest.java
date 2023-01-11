@@ -37,7 +37,7 @@ public class C02_negativeLoginTest {
         Driver.quitDriver();
     }
 
-    @Test
+    @Test(groups = "minireg")
     public void wrongEmailWrongPasswordTest(){
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         qualitydemyPage.loginButton.click();
