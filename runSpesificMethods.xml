@@ -16,6 +16,7 @@
             <class name="tests.D03_SmokeTests.C02_negativeLoginTest">
                 <methods>
                     <exclude name="wrongPasswordTest"></exclude>
+
                 </methods>
             </class>
 
