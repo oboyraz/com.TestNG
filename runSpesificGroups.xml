@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="run group">
+    <test name="run desired groups">
+        <!-- In order to run a desired group, the test methods in that group must be marked first.
+            When we want to run it, we need to specify 2 things,
+
+            1- where are the test methods to work
+            2- what is the group name to work
+        -->
+        <groups>
+            <run>
+                <include name="minireg1"></include>
+                <include name="minireg"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.D02_SoftAssert"></package>
+            <package name="tests.D03_SmokeTests"></package>
+        </packages>
+
+    </test>
+</suite>

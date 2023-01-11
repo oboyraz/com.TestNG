@@ -12,7 +12,7 @@ import java.util.*;
 
 public class C02_softAssert {
 
-    @Test
+    @Test(groups = "minireg1")
     public void test01(){
         Driver.getDriver().get("http://zero.webappsecurity.com/");
 
