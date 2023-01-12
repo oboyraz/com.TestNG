@@ -14,6 +14,7 @@ public class C02_PageTest extends TestBaseCross {
         String actUrl = driver.getCurrentUrl();
         String expData = "amazon";
         Assert.assertTrue(actUrl.contains(expData));
+        driver.quit();
 
     }
 }

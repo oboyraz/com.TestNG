@@ -24,5 +24,6 @@ public class C1_AmazonSearch extends TestBaseCross {
         String expData = "Nutella";
 
         Assert.assertTrue(actResultText.contains(expData));
+        driver.quit();
     }
 }
