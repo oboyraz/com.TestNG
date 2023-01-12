@@ -17,7 +17,7 @@ public class C03_DataProviderNegativeLoginTest {
         return wrongUsernamePasswordArray;
     }
 
-    @Test(dataProvider = "qualityDemyNegativeLoginTest")
+    @Test(dataProvider = "qualityDemyNegativeLoginTest") //dataProvider=> TestNG'de, test metodlarının çoklu veri setleri ile çalışmasını sağlar.
     public void negativeLoginTest(String username, String password){
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         QualitydemyPage qualitydemyPage = new QualitydemyPage();
